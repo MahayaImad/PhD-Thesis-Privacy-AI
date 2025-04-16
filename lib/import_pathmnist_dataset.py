@@ -5,6 +5,18 @@ from tensorflow.keras.utils import to_categorical
 import urllib.request
 import gc
 
+"""
+By : MAHAYA IMAD (15-04-2025)
+this module import and prepare PathMNIST dataset.
+
+Args:
+    dataset_dir (str): Folder when dataset were saved.
+    filename (str): Name of dataset (pathmnist | pathmnist_64 | pathmnist_128 | pathmnist_224).
+    num_classes (int): Number of output classes in dataset.
+    num_classes (int): Number of classes (one hot classification).
+    batch_size (int): Number of images in each batch of data.
+"""
+
 class PathMNISTLoader:
     def __init__(self, 
                  dataset_dir='datasets', 
