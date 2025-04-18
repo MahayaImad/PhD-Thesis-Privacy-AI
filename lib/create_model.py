@@ -74,7 +74,7 @@ def create_model(architecture="efficientnet",
 
     model.compile(
       optimizer=opt,
-      loss='categorical_crossentropy',
+      loss='sparse_categorical_crossentropy',
       metrics=['accuracy']
     )
 

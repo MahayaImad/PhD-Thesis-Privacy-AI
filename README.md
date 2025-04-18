@@ -14,4 +14,4 @@ MedMNIST2D | Data Modality | Tasks ( Classes/Labels) | Samples | Training / Vali
 
 PathMNIST | Colon Pathology | Multi-Class (9) | 107,180 | 89,996 / 10,004 / 7,180
 
-![alt text](overview.jpg)
+![alt text](image.png)
