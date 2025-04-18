@@ -83,16 +83,6 @@ class TrainingReportSaver:
                 val_values=val_values,
                 position=chart_position
             )    
-        # for i, metric in enumerate(metric_names):
-        #     train_col = header.index(f"Train {metric}") + 1
-        #     val_col = header.index(f"Val {metric}") + 1
-        #     chart_position = f"G{1 + i * 15}"
-        #     self._add_chart(
-        #         title=f"{metric.capitalize()} Chart",
-        #         col_indices=[train_col, val_col],
-        #         position=chart_position,
-        #         num_epochs=num_epochs
-        #     )
 
         i = num_epochs + 1   
         
@@ -107,7 +97,7 @@ class TrainingReportSaver:
         tab2.tableStyleInfo = style
         self.metrics_sheet.add_table(tab2)
 
-        cm_start_row = i + 27  
+        cm_start_row = i + 32
         cm_start_col = 1
 
         num_classes = len(confusion_matrix)
